@@ -1,0 +1,321 @@
+* 
+{
+    font-family: 'Trebuchet MS', verdana;
+    font-size: 16px;
+    color: green;
+    text-shadow: 3px 3px 3px white;
+}
+
+html
+{
+    height: 100%;
+}
+body
+{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.backgroundImage
+{
+    background-image: url("background/background1.jpg"), url("background/background2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header
+{
+    position: relative;
+    margin: 0 auto;
+    height: 80px;
+    min-width: 1300px; /* To keep elements at their places when re-sizing a browser window*/
+    /*background-color: rgb(255, 255, 255, 0.5);*/
+    background-color: rgb(255, 255, 255, 0.5);
+    box-shadow:	6px 6px 30px white;
+}
+.headerLogo
+{
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    height: 61.2px;
+    width: 300.4px;
+    /*height: 153px;
+    width: 751px;*/
+    text-align: center
+;   border: none;
+    /*border: 3px solid lightgreen;*/
+    border-radius: 60px;    /* rounded corners for images */
+    box-shadow:	6px 6px 30px white;
+}
+.headerContacts
+{
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    text-align: left;
+    color: darkgreen;
+    text-shadow: 3px 3px 3px white;
+    border: none;
+    box-shadow: none;
+}
+
+
+.nav /*Menu container (Menu field)*/
+{
+    display: flex;
+
+    position: relative;
+    margin: 0px auto; /*to make nav remain constant in size*/
+    height: 30px;
+    background-image: linear-gradient(
+        0deg,
+        darkgray,
+        white);
+    box-shadow:	6px 6px 30px lightcyan;
+    text-align: center;
+}
+ul   /*Block of Menu items/buttons*/
+{
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+
+}
+.nav li /*Menu buttons*/
+{
+    display: inline;
+    border-right: 2px solid gray;
+    padding: 2px;
+    border: 0.1em solid lightcyan;
+    border-radius: 20px;
+    box-shadow:	6px 6px 30px lightcyan;
+    background-image: linear-gradient(
+        0deg,
+        white,
+        lightgray);
+}
+.nav li:last-child
+{
+    border-right: none; /*To eliminate a separator after the last menu item if separators are used*/
+}
+.nav a /*Text for Menu buttons*/
+{
+    /*color:seagreen;*/
+    /*color:deepskyblue;*/
+    /*color:dodgerblue;*/
+    color:green;
+    /*font-family: Cochin, Georgia;*/
+    font-family:'Trebuchet MS';
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: solid;
+}
+.nav a:hover
+{
+    color:chocolate;
+    background-color: lightgoldenrodyellow;
+    border: 0.1em solid lightgoldenrodyellow;
+    border-radius: 20px;
+    box-shadow:	6px 6px 30px lightgoldenrodyellow;
+}
+.nav a:active
+{
+    color:chocolate;
+    background-color: lightgoldenrodyellow;
+    border: 0.1em solid lightgoldenrodyellow;
+    border-radius: 20px;
+    box-shadow:	6px 6px 30px lightgoldenrodyellow;
+}
+a:hover
+{
+    color:deepskyblue
+}
+
+
+.landingPgMain
+{
+    display: flex;
+    margin: 0 auto; /*Always use it to center an element in the middle of the screen*/
+    margin-top: 5px;
+    height: 480px;
+    min-height: 480px;
+    width: 1000px;
+    min-width: 1000px; /* To keep elements at their places when re-sizing a browser window*/
+    padding: 2vh 2vh 2vh 2vh;
+    background-color: rgb(255, 255, 255, 0.6);
+    border: 0.2em solid rgb(128, 128, 128, 0.5);
+    border-radius: 20px;
+    box-shadow:	6px 6px 30px rgba(55, 55, 55, 0.5);
+}
+iframe  /* 	The iframe tag defines an inline frame for the inclusion of external objects including other HTML documents. */
+{
+    display: block;
+    margin: 0 auto; /*Always use it to center an element in the middle of the screen*/
+    height: 100%;
+    width: 100%;
+    min-width: 1000px; /* To keep elements at their places when re-sizing a browser window*/
+    padding: 0;
+    text-align: center;
+    border-style: none;
+}
+img
+{
+    position: relative;
+    margin: 0 auto;
+    /*border: 1px outset rgba(128, 128, 128, 0.5);*/
+    border: 3px solid yellowgreen;
+    border-radius: 20px;    /* rounded corners for images */
+    box-shadow:	6px 6px 30px rgba(55, 55, 55, .6);
+}
+.homePgImage
+{
+    position: relative;
+    margin-left: 0px;
+    height: 233.33px;
+    width: 281.67px;
+    /*border: 0.2em outset rgba(128, 128, 128, 0.5);
+    border-radius: 40px;    /* rounded corners for images */
+    border: 5px solid yellowgreen;
+    border-radius: 400px;    /* rounded corners for images */
+    box-shadow:	6px 6px 30px lightcyan;
+}
+.homePgBullets
+{
+    float: inline-end;
+    position: relative;
+    margin: 0 auto;
+}
+.contactsPgText
+{
+    display: inline;
+    position: relative;
+    font-size: 16px;
+    left: 35vw;
+    padding-top: 3px;
+    border: none;
+    box-shadow: none;
+}
+.homePgText
+{
+    display: inline;
+    position: relative;
+    font-size: 16px;
+    left: 25px;
+    padding-top: 3px;
+    border: none;
+    box-shadow: none;
+}
+.aboutPgText
+{
+    display: inline;
+    position: relative;
+    font-size: 16px;
+    left: 25px;
+    color: black;
+    padding-top: 3px;
+    text-align: left;
+
+    border: none;
+    box-shadow: none;
+}
+
+
+table
+{
+    margin: 0 auto;
+    padding: 3px;
+    width: 900px;
+}
+.td1
+{
+    height: auto;
+    width: 1%;	
+    padding-right: 20px;
+    text-align: right;
+    color: black;
+}
+.td2
+{
+    height: auto;
+    width: 1%;	
+    text-align: left;
+    color: black;
+}
+.td3
+{
+    height: auto;
+    width: 15%;
+    text-align: left;
+    color: black;
+}
+.td4
+{
+    height: auto;
+    width: 1%;	
+    text-align: center;
+    color: black;
+}
+.tdHome1
+{
+    width: 50%;	
+}
+
+
+p
+{
+    text-align: left;
+    border: none;
+    color: black;
+}
+h1
+{
+    font-family: garamond, Georgia, serif;
+    font-size: 58px;
+    text-align: center;
+    color:aquamarine;
+    color: greenyellow;
+    text-decoration: greenyellow;
+    text-shadow: 0px 0px 6px yellow;
+    text-shadow: black;
+    letter-spacing: 5px;
+    margin: 0 auto;
+    padding-top: 2px;
+    padding-bottom: 0px;
+}
+h2
+{
+    font-family: garamond, Georgia, serif;
+    font-size: 25px;
+    text-align: center;
+    color:gold;
+    text-decoration: greenyellow;
+    text-shadow: 0px 0px 6px yellow;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+h3
+{
+    font-family: garamond, Georgia, serif;
+    text-align: center;
+    color:black;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+h4
+{
+    text-align: center;
+    color: black;
+    letter-spacing: 1px;
+}
+h5
+{
+    text-align: center;
+    color: white;
+}
