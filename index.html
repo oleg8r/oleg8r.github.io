@@ -73,12 +73,13 @@
 
             <nav class="nav">               
                 <ul>
-                    <li><a href="home.htm" target="container">Главная</a></li>
-                    <li><a href="peanut_butter.htm" target="container">Арахисовые пасты</a></li>
-                    <li><a href="urbech.htm" target="container">Урбеч</a></li>
-                    <li><a href="toppings.htm" target="container">Топпинги</a></li>
-                    <li><a href="about.htm" target="container">О нас</a></li>
-                    <li><a href="contacts.htm" target="container">Контакты</a></li>
+                    <li><a href="home.htm" target="myIframe">Главная</a></li>
+                    <li><a href="peanut_butter.htm" target="myIframe">Арахисовые пасты</a></li>
+                    <li><a href="urbech.htm" target="myIframe">Урбеч</a></li>
+                    <li><a href="toppings.htm" target="myIframe">Топпинги</a></li>
+                    <li><a href="toppings_grid.htm" target="myIframe">Топпинги_Grid</a></li>
+                    <li><a href="about.htm" target="myIframe">О нас</a></li>
+                    <li><a href="contacts.htm" target="myIframe">Контакты</a></li>
                 </ul>
             </nav>
     
@@ -87,15 +88,35 @@
         <br>
         <br>
 
-        <main class="landingPgMain">
+        <main class="indexPgMain">
 
-                <iframe name="container" src="home.htm"></iframe>
-            
+                <iframe name="myIframe" src="home.htm" frameborder="0" scrolling="yes" onload="resizeIframe(this)"> </iframe>
+                <!--iframe src="index.html" frameborder="0" scrolling="no" onload="resizeIframe(this)" /-->
         </main>
+
+        <!--script>
+            function resizeIframe(obj)
+            {
+              obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+            }
+        </script-->
+
+        <!--script>
+            // Selecting the iframe element
+            var iframe = document.getElementById("myIframe");
+            
+            // Adjusting the iframe height onload event
+            iframe.onload = function()
+            {
+                iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+            }
+        </script-->
+
+        <!--script src="JavaScript_Oleg.js"> </script-->
+
 
     </body>
 
-    <script src="JavaScript_Oleg.js"> </script>
 
 <!--
     author:        ЭкоБиоМикс
