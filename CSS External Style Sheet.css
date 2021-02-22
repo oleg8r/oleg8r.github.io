@@ -9,11 +9,14 @@
 html
 {
     height: 100%;
+    width: 100%;
 }
 body
 {
     margin: 0 auto;
     padding: 0 auto;
+    height: 80%;
+    width: 100%;
 }
 .backgroundImage
 {
@@ -165,13 +168,20 @@ a:hover
 }*/
 iframe  /* 	The iframe tag defines an inline frame for the inclusion of external objects including other HTML documents. */
 {
-    display: block;
-    margin: 0 auto; /*Always use it to center an element in the middle of the screen*/
-    min-height: 80vh;
-    min-width: 80vw; /* To keep elements at their places when re-sizing a browser window*/
-    padding: 0;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5px;
+    min-height: 100%;
+    width: 1000px;
+    min-width: 70%;
+    padding: 2vh 2vh 2vh 2vh;
     text-align: center;
-    border-style: none;
+
+    padding: 2vh 2vh 2vh 2vh;
+    background-color: rgb(255, 255, 255, 0.6);
+    border: 0.2em solid rgb(128, 128, 128, 0.5);
+    border-radius: 20px;
+    box-shadow:	6px 6px 30px rgba(55, 55, 55, 0.5);
 }
 img
 {

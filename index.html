@@ -88,11 +88,11 @@
         <br>
         <br>
 
-        <main class="indexPgMain">
+        <!--main class="indexPgMain"-->
 
-                <iframe name="myIframe" src="home.htm" frameborder="0" scrolling="yes" onload="resizeIframe(this)"> </iframe>
+                <iframe name="myIframe" src="home.htm" onload="resizeIframe(this)"> </iframe>
                 <!--iframe src="index.html" frameborder="0" scrolling="no" onload="resizeIframe(this)" /-->
-        </main>
+        <!--/main-->
 
         <script>
             function resizeIframe(obj)
@@ -100,6 +100,8 @@
               obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
             }
         </script>
+
+        <console class="log"></console>
 
         <!--script>
             // Selecting the iframe element
