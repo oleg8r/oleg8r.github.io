@@ -220,6 +220,19 @@ img
     width: 175px;
     float: left;
 }
+.imgSales
+{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    height: 500px;
+    width: 700px;
+    /*border: 1px outset rgba(128, 128, 128, 0.5);*/
+    border: 3px solid yellowgreen;
+    border-radius: 20px;    /* rounded corners for images */
+    box-shadow:	6px 6px 30px rgba(55, 55, 55, .6);
+}
+
 .homePgImage
 {
     position: relative;
@@ -354,6 +367,11 @@ p
     text-align: left;
     border: none;
 }
+.centering
+{
+    margin: 0 auto; /*Always use it to center an element in the middle of the screen*/
+    text-align: center;
+}
 h1
 {
     font-family: garamond, Georgia, serif;
@@ -401,3 +419,31 @@ h5
     text-align: center;
     color: white;
 }
+
+
+.arrow /*Back-to-top arrow*/
+{
+    position: relative;
+    display: block;
+    margin: 0 auto; /*Always use it to center an element in the middle of the screen*/
+    margin-top: 10px;
+    
+    text-align: center;
+    height: 60px;
+    width: 60px;
+
+    padding: 2vh 2vh 2vh 2vh;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 0.2em solid rgb(128, 128, 128, 0.5);
+    border-radius: 20px;
+    box-shadow:	6px 6px 30px rgba(55, 55, 55, 0.5);
+}
+.arrow a:hover /*Not working, because it's an image*/
+{
+    color:chocolate;
+    background-color: lightgoldenrodyellow;
+    border: 0.1em solid lightgoldenrodyellow;
+    border-radius: 20px;
+    box-shadow:	6px 6px 30px lightgoldenrodyellow;
+}
+
