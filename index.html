@@ -53,18 +53,12 @@
     </head>
 
 
-    <!--BODY-->
     <body class="backgroundImage">
 
-        <!--Header-->
         <header >
 
-            <!--img class="headerLogo" id="headerLogo" src="logo/EcoBioMix_Text_Logo.jpg" alt="Image Not Found" style="height: 110px; width: 578px; float: none;"-->
             <img class="headerLogo" id="headerLogoID" src="logo/text_logo_green_v1.jpg" alt="Image Not Found">
-            
-            <!--h1><b><i>ЭкоБиоМикс</i></b></h1>
-            <h2><b>Магазин натуральных продуктов</b></h2-->
-            
+                        
             <!--p class="headerContacts">
                 🏡 г. Дмитров, МО, ул. Космонавтов, 37а<br>
                 🕙 10.00 - 21.00 ежедневно<br>
@@ -73,13 +67,13 @@
 
             <nav class="nav">               
                 <ul>
-                    <li><a href="home.htm" target="myIframe">Главная</a></li>
-                    <li><a href="peanut_butter.htm" target="myIframe">Арахисовые пасты</a></li>
-                    <li><a href="urbech.htm" target="myIframe">Урбеч</a></li>
-                    <li><a href="toppings.htm" target="myIframe">Топпинги</a></li>
-                    <li><a href="toppings_grid.htm" target="myIframe">Топпинги_Grid</a></li>
-                    <li><a href="about.htm" target="myIframe">О нас</a></li>
-                    <li><a href="contacts.htm" target="myIframe">Контакты</a></li>
+                    <li><a href="home.htm">Главная</a></li>
+                    <li><a href="products.htm">Продукты</a></li>
+                    <li><a href="peanut_butter.htm">Арахисовые пасты</a></li>
+                    <li><a href="urbech.htm">Урбеч</a></li>
+                    <li><a href="toppings.htm">Топпинги</a></li>
+                    <li><a href="about.htm">О нас</a></li>
+                    <li><a href="contacts.htm">Контакты</a></li>
                 </ul>
             </nav>
     
@@ -94,14 +88,35 @@
                 <!--iframe src="index.html" frameborder="0" scrolling="no" onload="resizeIframe(this)" /-->
         <!--/main-->
 
-        <script>
+        <!--script>
             function resizeIframe(obj)
             {
               obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
             }
+        </script-->
+
+        <p id="demo"></p>
+
+        <!--button onclick="getFunction()">Get scrollHeight and scrollWidth</button>
+        <button onclick="setFunction()">Set height and width</button-->
+
+
+        <script>
+
+            onload="setFunction()";
+
+            var element = document.getElementsByName("myIframe");
+
+            function setFunction()
+            {
+                elmnt.style.height = elmnt.scrollHeight + "px";
+                elmnt.style.width = elmnt.scrollWidth + "px";
+            }
+
         </script>
 
-        <console class="log"></console>
+
+        <!--console class="log"></console-->
 
         <!--script>
             // Selecting the iframe element

@@ -140,6 +140,21 @@ a:hover
 }
 
 
+main
+{
+    margin: 0 auto;
+    margin-top: 5px;
+
+    width: 70%;
+    min-width: 70%;
+
+    padding: 2vh 2vh 2vh 2vh;
+    background-color: rgb(255, 255, 255, 0.6);
+    border: 0.2em solid rgb(128, 128, 128, 0.5);
+    border-radius: 20px;
+    box-shadow:	6px 6px 30px rgba(55, 55, 55, 0.5);
+}
+ 
 /*.indexPgMain
 {
     display: flex;
@@ -166,12 +181,12 @@ a:hover
     text-align: center;
     border-style: none;
 }*/
-iframe  /* 	The iframe tag defines an inline frame for the inclusion of external objects including other HTML documents. */
+/*iframe
 {
     display: flex;
     margin: 0 auto;
     margin-top: 5px;
-    min-height: 100%;
+    min-height: 90%;
     width: 1000px;
     min-width: 70%;
     padding: 2vh 2vh 2vh 2vh;
@@ -182,7 +197,7 @@ iframe  /* 	The iframe tag defines an inline frame for the inclusion of external
     border: 0.2em solid rgb(128, 128, 128, 0.5);
     border-radius: 20px;
     box-shadow:	6px 6px 30px rgba(55, 55, 55, 0.5);
-}
+}*/
 img
 {
     position: relative;
@@ -191,6 +206,19 @@ img
     border: 3px solid yellowgreen;
     border-radius: 20px;    /* rounded corners for images */
     box-shadow:	6px 6px 30px rgba(55, 55, 55, .6);
+}
+.imgProduct
+{
+    position: relative;
+    margin: 0 auto;
+    /*border: 1px outset rgba(128, 128, 128, 0.5);*/
+    border: 3px solid yellowgreen;
+    border-radius: 20px;    /* rounded corners for images */
+    box-shadow:	6px 6px 30px rgba(55, 55, 55, .6);
+
+    height: 250px;
+    width: 175px;
+    float: left;
 }
 .homePgImage
 {
@@ -215,7 +243,7 @@ img
     display: inline;
     position: relative;
     font-size: 16px;
-    left: 35vw;
+    left: 25vw;
     padding-top: 3px;
     border: none;
     box-shadow: none;
@@ -249,38 +277,39 @@ table
 {
     margin: 0 auto;
     padding: 3px;
-    width: 900px;
+    width: 100%;
+    text-align: center;
 }
 .td1
 {
     height: auto;
     width: 1%;	
     padding-right: 20px;
-    text-align: right;
+    text-align: center;
     color: black;
 }
 .td2
 {
     height: auto;
-    width: 1%;	
-    text-align: left;
-    color: black;
-}
-.td3a
-{
-    height: auto;
-    width: 55%;
-    text-align: left;
+    width: 20%;	
+    text-align: center;
     color: black;
 }
 .td3
 {
     height: auto;
-    width: 15%;
+    width: 50%;
     text-align: left;
     color: black;
 }
 .td4
+{
+    height: auto;
+    width: 25%;
+    text-align: left;
+    color: black;
+}
+.td5
 {
     height: auto;
     width: 1%;	
@@ -290,6 +319,17 @@ table
 .tdHome1
 {
     width: 50%;	
+    text-align: center;
+}
+.tdHome2
+{
+    width: 5%;	
+    text-align: center;
+}
+.tdHome3
+{
+    width: 50%;	
+    text-align: left;
 }
 
 
@@ -309,9 +349,10 @@ table
 
 p
 {
+    width: 90%;
+    color: black;
     text-align: left;
     border: none;
-    color: black;
 }
 h1
 {
