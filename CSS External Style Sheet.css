@@ -66,10 +66,20 @@ header
 }
 
 
+.button
+{
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+
 .nav /*Menu container (Menu field)*/
 {
     display: flex;
-
     position: relative;
     margin: 0px auto; /*to make nav remain constant in size*/
     height: 30px;
@@ -83,7 +93,7 @@ header
 ul   /*Block of Menu items/buttons*/
 {
     display: inline-block;
-    position: relative;
+    position: sticky;
     margin: 0 auto;
     padding: 5px;
     text-align: center;
@@ -126,17 +136,10 @@ ul   /*Block of Menu items/buttons*/
     border-radius: 20px;
     box-shadow:	6px 6px 30px lightgoldenrodyellow;
 }
-.nav a:active
+.nav li:active
 {
-    color:chocolate;
-    background-color: lightgoldenrodyellow;
-    border: 0.1em solid lightgoldenrodyellow;
-    border-radius: 20px;
-    box-shadow:	6px 6px 30px lightgoldenrodyellow;
-}
-a:hover
-{
-    color:deepskyblue
+    background-color: goldenrod;
+    box-shadow: 0 5px #666;
 }
 
 
