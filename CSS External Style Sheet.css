@@ -66,22 +66,12 @@ header
 }
 
 
-.button
-{
-    outline: none;
-    color: #fff;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-}
-
-
 .nav /*Menu container (Menu field)*/
 {
-    display: flex;
     position: relative;
+    display: flex;
     margin: 0px auto; /*to make nav remain constant in size*/
+    margin-top: 6px;
     height: 30px;
     background-image: linear-gradient(
         0deg,
@@ -90,19 +80,114 @@ header
     box-shadow:	6px 6px 30px lightcyan;
     text-align: center;
 }
-ul   /*Block of Menu items/buttons*/
+ul
 {
-    display: inline-block;
-    position: sticky;
-    margin: 0 auto;
-    padding: 5px;
-    text-align: center;
-
+    margin: 0px auto; /*to make nav remain constant in size*/
 }
 .nav li /*Menu buttons*/
 {
     display: inline;
-    border-right: 2px solid gray;
+}
+.nav li:last-child
+{
+    border-right: none; /*To eliminate a separator after the last menu item if separators are used*/
+}
+.nav a /*Text for Menu buttons*/
+{
+    color:green;
+    font-family:'Trebuchet MS';
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: solid;
+}
+.nav a:hover
+{
+    color:chocolate;
+    background-color: lightyellow;
+    box-shadow:	6px 6px 30px lightyellow;
+}
+.nav a:active
+{
+    color:chocolate;
+    box-shadow:	6px 6px 30px white;
+}
+
+
+.navButton
+{
+    color:green;
+    background-image: linear-gradient(
+        0deg,
+        white,
+        lightgray);
+    padding: 1px 5px; /*height & width*/
+
+    font-family:'Trebuchet MS';
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: solid;
+    text-align: center;
+    cursor: pointer;
+
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 5px #999;
+}
+
+.navButton:hover
+{
+    color:chocolate;
+    background-image: linear-gradient(
+        180deg,
+        lightyellow,
+        lightyellow);
+}
+.navButton:active 
+{
+    color:chocolate;
+    background-image: linear-gradient(
+        180deg,
+        lightyellow,
+        lightyellow);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.navButton:focus
+{
+    color:chocolate;
+    background-image: linear-gradient(
+        180deg,
+        lightyellow,
+        lightyellow);
+}
+
+
+/*
+.nav
+{
+    position: relative;
+    margin: 0px auto;
+    height: 30px;
+    background-image: linear-gradient(
+        0deg,
+        darkgray,
+        white);
+    box-shadow:	6px 6px 30px lightcyan;
+    text-align: center;
+}
+ul 
+{
+    display: inline-block;
+    position: fixed;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+}
+.nav li
+{
+    display: inline;
     padding: 2px;
     border: 0.1em solid lightcyan;
     border-radius: 20px;
@@ -114,15 +199,11 @@ ul   /*Block of Menu items/buttons*/
 }
 .nav li:last-child
 {
-    border-right: none; /*To eliminate a separator after the last menu item if separators are used*/
+    border-right: none;
 }
-.nav a /*Text for Menu buttons*/
+.nav a
 {
-    /*color:seagreen;*/
-    /*color:deepskyblue;*/
-    /*color:dodgerblue;*/
     color:green;
-    /*font-family: Cochin, Georgia;*/
     font-family:'Trebuchet MS';
     font-size: 16px;
     font-weight: 800;
@@ -141,7 +222,7 @@ ul   /*Block of Menu items/buttons*/
     background-color: goldenrod;
     box-shadow: 0 5px #666;
 }
-
+*/
 
 main
 {
